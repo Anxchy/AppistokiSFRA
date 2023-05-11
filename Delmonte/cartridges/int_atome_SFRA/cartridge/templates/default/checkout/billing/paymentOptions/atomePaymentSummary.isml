@@ -1,0 +1,6 @@
+<div class="atome-method-name">
+    ${Resource.msg('atome.order.payment', 'atome', null)}
+</div>
+<div class="atome-amount">
+    <isif condition="${session.getCurrency().getCurrencyCode() == 'SGD'}">S$</isif><isif condition="${session.getCurrency().getCurrencyCode() == 'MYR'}">RM</isif><isif condition="${session.getCurrency().getCurrencyCode() == 'HKD'}">HK$</isif>${payment.amount}
+</div>

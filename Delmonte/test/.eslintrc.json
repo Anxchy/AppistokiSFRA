@@ -2,7 +2,6 @@
   "env": {
     "mocha": true
   },
-  "rules": {
     "require-jsdoc": "off",
     "max-len": "off",
     "quote-props": "off",

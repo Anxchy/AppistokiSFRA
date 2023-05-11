@@ -59,8 +59,18 @@ server.get('Show', cache.applyPromotionSensitiveCache, function (req, res, next)
         quickViewUrl = URLUtils.url('Home-Show');
     }
 
-    var context = {
+    var productDate = product.onlineFrom;
+    var today = new Date();
+	var difference_in_date = Math.round((Math.abs(today-productDate))/(1000*60*60*24));
+	var newProduct = false;
+    
+	if (difference_in_date < 30){
+    	newProduct = true;
+    }
+    
+	var context = {
         product: product,
+        new_product: newProduct,
         urls: {
             product: productUrl,
             quickView: quickViewUrl

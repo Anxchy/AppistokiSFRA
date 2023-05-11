@@ -1,0 +1,9 @@
+// ExecuteScriptModule test
+'use strict';
+
+function execute(param) {
+    var a = 5;
+}
+
+
+exports.execute = execute;

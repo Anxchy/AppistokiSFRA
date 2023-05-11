@@ -55,3 +55,12 @@ ${dw.system.HookMgr.callHook('app.template.htmlHead', 'htmlHead', pdict) || ''}
 </iscomment>
 <isprint value="${require('*/cartridge/scripts/theming/skin.js').renderSkin()}" encoding="off">
 <link rel="stylesheet" href="${URLUtils.staticURL('/css/skin/skin.css')}" />
+
+<iscomment> <isset name="MID" value="${dw.system.Site.getCurrent().getCustomPreferenceValue('AbandonCart_MID')}" scope="page" />
+<script type="text/javascript" src="https://${MID}.collect.igodigital.com/collect.js"> </script>
+
+<script>
+  _etmc.push(["setOrgId", "514000190"]);
+  _etmc.push(["setUserInfo", {"email": "ankit@gmail.com"}]);
+  _etmc.push(["trackPageView"]);
+</script> </iscomment>

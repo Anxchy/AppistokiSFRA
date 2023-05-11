@@ -25,4 +25,14 @@ module.exports = function (object, apiProduct, type) {
         enumerable: true,
         value: apiProduct.brand
     });
+    
+    Object.defineProperty(object, 'onlineFrom', {
+        enumerable: true,
+        value: apiProduct.onlineFrom
+    });
+    
+    Object.defineProperty(object, 'isSale', {
+        enumerable: true,
+        value: apiProduct.custom.isSale
+    });
 };

@@ -544,6 +544,23 @@ function miniCartReportingUrl(url) {
     }
 }
 
+// function trackBasket(items){
+//     var productJSON = [];
+//     for (var i = 0; i < items.length; i++){
+//         var lineItem = items[i];                 
+//         var productData ={
+//            item:lineItem.id,
+//            quantity:lineItem.quantity,
+//            price:lineItem.priceTotal.price,
+//            unique_id:lineItem.id
+//         };                 
+//         productJSON.push(productData);
+//      }
+//     _etmc.push(["setOrgId", "514000190"]);
+//     _etmc.push(["setUserInfo", {"email": "ankit@gmail.com"}]);
+//     _etmc.push(["trackCart", { "cart": productJSON}]);
+// }
+
 module.exports = {
     attributeSelect: attributeSelect,
     methods: {
@@ -673,6 +690,9 @@ module.exports = {
                     data: form,
                     success: function (data) {
                         handlePostCartAdd(data);
+                        // if (data && data.cart && data.cart.items){
+                        //     trackBasket(data.cart.items);
+                        // }
                         $('body').trigger('product:afterAddToCart', data);
                         $.spinner().stop();
                         miniCartReportingUrl(data.reportingURL);

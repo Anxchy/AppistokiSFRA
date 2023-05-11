@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<form xmlns="http://www.demandware.com/xml/form/2008-04-19" >
+	<group formid="user">
+		<field formid="firstName" label="contactUserDetail.firstName" type="string" mandatory="true" binding="firstName" max-length="50"/>
+		<field formid="lastName" label="contactUserDetail.lastName" type="string" mandatory="true" binding="lastName" max-length="50"/>
+		<field formid="email" label="contactUserDetail.email" regexp="^[\w.%+-]+@[\w.-]+\.[\w]{2,6}$"  type="string" mandatory="true" binding="email" max-length="50"/>
+		<field formid="phone" label="contactUserDetail.phone" type="string" mandatory="true" binding="phone" max-length="50"/>
+		<field formid="inquiryAbout" label="contactUserDetail.inquiryAbout" type="string" mandatory="true" binding="inquiryAbout" max-length="50"/>
+		<field formid="inquiry" label="contactUserDetail.inquiry" type="string" mandatory="true" binding="inquiry" max-length="50"/>	
+	</group>
+</form>

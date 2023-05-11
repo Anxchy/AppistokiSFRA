@@ -6,6 +6,11 @@
         assets.addCss('/css/product/detail.css');
     </isscript>
 
+<iscomment> <script>
+  _etmc.push(["setOrgId", "514000190"]);
+  _etmc.push(["trackPageView", { "item" : "${pdict.product.id}" }]);
+</script> </iscomment>
+
     <isset name="product" value="${pdict.product}" scope="page" />
     <isset name="isQuickView" value="${false}" scope="page" />
     <isset name="isProductSet" value="${pdict.product.productType === 'set'}" scope="page" />
@@ -18,7 +23,7 @@
                         <isinclude template="components/breadcrumbs/pageBreadcrumbs"/>
                     </div>
 
-                    <!-- Product Name -->
+                    <!-- Product Name --> <!--ankitPractice-->${dw.system.Site.getCurrent().getCustomPreferenceValue("PracticeSitePreference")}
                     <div class="row">
                         <div class="d-md-none col-sm-12">
                             <h1 class="product-name">${product.productName}</h1>

@@ -7,7 +7,8 @@
         </isif>
 
         <isinclude template="product/components/productTileName" />
-
+        <iscomment> //ankit practice// </iscomment>
+        ....... ${product.flavour}
         <isset name="price" value="${product.price}" scope="page" />
         <isif condition="${product.productType === 'set'}">
             <isinclude template="product/components/pricing/setPrice" />

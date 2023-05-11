@@ -1,6 +1,6 @@
 var path = require('path');
-    var ExtractTextPlugin = require('sgmf-scripts')['extract-text-webpack-plugin'];
-    var sgmfScripts = require('sgmf-scripts');
+var ExtractTextPlugin = require('sgmf-scripts')['extract-text-webpack-plugin'];
+var sgmfScripts = require('sgmf-scripts');
 
     module.exports = [{
         mode: 'production',
@@ -10,8 +10,8 @@ var path = require('path');
             path: path.resolve('./cartridges/site_delmonte/cartridge/static'),
             filename: '[name].js'
         }
-    }, {
-        mode: 'none',
+    },{
+        mode: 'production',
         name: 'scss',
         entry: sgmfScripts.createScssPath(),
         output: {

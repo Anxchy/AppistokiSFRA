@@ -1,0 +1,15 @@
+<!--- TEMPLATENAME: contactDetailsSuccess.isml --->
+<iscontent type="text/html" charset="UTF-8" compact="true" />
+<!doctype html>
+<head></head>
+<body>
+<h1>Hi ${pdict.Name}</h1>
+
+
+  <div class="text-center">
+        
+             <img class="hidden-md-down" src="${URLUtils.staticURL('/images/thank.png')}" class="img-responsive center-block" />
+       
+    </div>
+</body>
+</html>

@@ -1,0 +1,392 @@
+<!--- TEMPLATENAME: contactUserDetail.isml --->
+
+<isdecorate template="common/layout/page">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="https://fonts.googleapis.com/css?family=Montserrat"
+rel="stylesheet">
+<style type="text/css">
+table>thead>tr>td {
+text-transform: uppercase;
+}
+
+.contact_ask_chef_form {
+    background: #f1f7e6;
+    padding: 100px 0;
+}
+
+body {
+    display: block;
+    margin: 8px;
+}
+div {
+    display: block;
+}
+
+.contact_ask_chef_form .ask_chef_form_content .page_form[data-v-60c75ec8] {
+    border: 1px solid rgba(50,60,29,.05098);
+    border-radius: 4px;
+    box-shadow: 0 6px 15px rgb(50 60 29 / 5%);
+    padding: 60px;
+    background-color: #fff;
+}
+.contact_ask_chef_form .ask_chef_form_content .page_form .form_ttl[data-v-60c75ec8] {
+    font-size: 28px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+}
+h1 {
+    display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.contact_ask_chef_form .ask_chef_form_content .page_form .divider_div[data-v-60c75ec8] {
+    margin: 35px 0;
+}
+.contact_ask_chef_form .ask_chef_form_content .page_form .divider_div .divider_tmt[data-v-60c75ec8] {
+    position: relative;
+    width: 12%;
+    height: 1px;
+    border-bottom: 1px solid #000;
+    margin: 0 auto;
+}
+form {
+    display: block;
+    margin-top: 0em;
+    margin-block-end: 1em;
+}
+.contact_ask_chef_form .ask_chef_form_content .page_form .form .group_inline[data-v-60c75ec8] {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    margin-bottom: 20px;
+}
+.contact_ask_chef_form .ask_chef_form_content .page_form .form .group_inline .group[data-v-60c75ec8] {
+    flex: 0 0 48.33%;
+    margin-bottom: 0;
+}
+.contact_ask_chef_form .ask_chef_form_content .page_form .form .group[data-v-60c75ec8] {
+    position: relative;
+   /* margin-bottom: 20px;*/
+}
+.contact_ask_chef_form .ask_chef_form_content .page_form .divider_div .divider_tmt span[data-v-60c75ec8] {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    background-color: #fff;
+    padding: 0 10px;
+    transform: translate(-50%,-50%);
+}
+#contact_ask_chef_form .ask_chef_form_content label[data-v-60c75ec8] {
+    display: inline-block;
+    line-height: 1;
+    padding-bottom: 10px;
+    font-size: 16px;
+    color: #121905;
+    margin-bottom: 5px;
+    opacity: .4;
+}
+label {
+    cursor: default;
+}
+.contact_ask_chef_form .ask_chef_form_content input[data-v-60c75ec8], .contact_ask_chef_form .ask_chef_form_content select[data-v-60c75ec8], .contact_ask_chef_form .ask_chef_form_content textarea[data-v-60c75ec8] {
+    width: 100%;
+    border-radius: 2px;
+    border: 1px solid #8ec325;
+    padding: 12px 25px 12px 16px;
+    font-size: 16px;
+    line-height: 1;
+    -webkit-appearance: none;
+    outline: none;
+}
+input:not([type="image" i]) {
+    box-sizing: border-box;
+}
+input[type="email" i] {
+}
+input {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+}
+.contact_ask_chef_form .ask_chef_form_content .vei.vei_hide[data-v-60c75ec8] {
+    display: none;
+}
+.contact_ask_chef_form .ask_chef_form_content .vei[data-v-60c75ec8] {
+    position: absolute;
+    right: 10px;
+    top: 45%;
+    transition: .3s ease-in-out;
+}
+.contact_ask_chef_form .ask_chef_form_content .vei.vei_success[data-v-60c75ec8] {
+    transition: .3s ease-in-out;
+    top: 55%;
+}
+.contact_ask_chef_form .ask_chef_form_content .vei[data-v-60c75ec8] {
+    position: absolute;
+    right: 10px;
+}
+svg:not(:root) {
+    overflow: hidden;
+}
+svg[Attributes Style] {
+    height: 20;
+    width: 20;
+}
+.contact_ask_chef_form .ask_chef_form_content select[data-v-60c75ec8] {
+    padding: 17px 25px 17px 16px;
+}
+select:not(:-internal-list-box) {
+    overflow: visible !important;
+}
+select {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    box-sizing: border-box;
+    align-items: center;
+    white-space: pre;
+    -webkit-rtl-ordering: logical;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    cursor: default;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+   
+}
+#contact_ask_chef_form .ask_chef_form_content .page_form #form .group .dd[data-v-60c75ec8] {
+    content: "";
+    position: absolute;
+    top: 65%;
+    right: 10px;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid #8ec325;
+    z-index: 0;
+}
+.contact_ask_chef_form .ask_chef_form_content .page_form .form .group[data-v-60c75ec8] {
+    position: relative;
+    margin-bottom: 20px;
+}
+.contact_ask_chef_form .ask_chef_form_content .page_form .form .group .inner[data-v-60c75ec8] {
+    position: relative;
+}
+.contact_ask_chef_form .ask_chef_form_content textarea[data-v-60c75ec8] {
+    resize: none;
+}
+textarea {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    -webkit-rtl-ordering: logical;
+    flex-direction: column;
+    cursor: text;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    column-count: initial !important;
+    box-sizing: border-box;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+}
+svg[Attributes Style] {
+    height: 20;
+    width: 20;
+}
+user agent stylesheet
+svg:not(:root) {
+    overflow: hidden;
+}
+.contact_ask_chef_form .ask_chef_form_content .vei[data-v-60c75ec8] {
+    position: absolute;
+    right: 10px;
+    top: 45%;
+    transition: .3s ease-in-out;
+}
+.contact_ask_chef_form .ask_chef_form_content .page_form .form .group.captcha_group[data-v-60c75ec8] {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.contact_ask_chef_form .ask_chef_form_content .page_form .form .group[data-v-60c75ec8] {
+    position: relative;
+    margin-bottom: 20px;
+}
+.contact_ask_chef_form .ask_chef_form_content .page_form .form .action_btn[data-v-60c75ec8] {
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-end;
+}
+.contact_ask_chef_form .ask_chef_form_content .page_form .form .action_btn .btn_send[data-v-60c75ec8] {
+    background-color: #1e70e0;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #fff;
+    padding: 12px 80px;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    transition: .3s ease-in-out;
+}
+button {
+    appearance: auto;
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
+    box-sizing: border-box;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+.contact_ask_chef_form .ask_chef_form_content .page_form .divider_div .divider_tmt span svg .div_a[data-v-60c75ec8] {
+    fill: #f1f7e6;
+}
+.contact_ask_chef_form .ask_chef_form_content .page_form .divider_div .divider_tmt span svg .div_a[data-v-60c75ec8], .contact_ask_chef_form .ask_chef_form_content .page_form .divider_div .divider_tmt span svg .div_b[data-v-60c75ec8] {
+    stroke: #323c1d;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+path[Attributes Style] {
+    d: path("M -2496.62 923.733 c -3.481 1.466 -5.868 4.469 -5.868 7.936 c 0 4.91 4.788 8.891 10.694 8.891 s 10.694 -3.98 10.694 -8.891 c 0 -3.521 -2.462 -6.563 -6.032 -8");
+    transform: translate(2502.49, -920.003);
+}
+:not(svg) {
+    transform-origin: 0px 0px;
+}
+</style>
+</head>
+
+
+<header class="main_navigation">
+<div class="checking"><span></span>&nbsp;</div>
+
+<div class="burger"><svg class="burger_icon" height="17" viewbox="0 0 18.196 17" width="18.196" xmlns="http://www.w3.org/2000/svg"> <g transform="translate(-3 -7.641)"> <path class="a" d="M4.5,18H19.7" transform="translate(0 -1.859)"></path> <path class="a" d="M4.5,9H19.7" transform="translate(0 0.141)"></path> <path class="a" d="M4.5,27H19.7" transform="translate(0 -3.859)"></path> </g> </svg></div>
+
+<p>&nbsp;</p>
+</header>
+
+<div data-v-60c75ec8="" data-v-fb53d95e="" id="contact_ask_chef_form" class="contact_ask_chef_form">
+<div class="container ask_chef_form_content" data-v-60c75ec8="">
+<div class="page_form" data-v-60c75ec8="">
+<h1 class="form_ttl" data-v-60c75ec8="">Leave us a message</h1>
+
+<div class="divider_div" data-v-60c75ec8="">
+<div class="divider_tmt" data-v-60c75ec8=""><span data-v-60c75ec8=""> <svg data-v-60c75ec8="" height="21.556" viewbox="0 0 22.388 21.556" width="22.388" xmlns="http://www.w3.org/2000/svg"> <g data-v-60c75ec8="" transform="translate(0.5 0.5)"> <path class="div_a" d="M-2496.623,923.733c-3.481,1.466-5.868,4.469-5.868,7.936,0,4.91,4.788,8.891,10.694,8.891s10.694-3.98,10.694-8.891c0-3.521-2.462-6.563-6.032-8" data-v-60c75ec8="" transform="translate(2502.49 -920.003)"></path> <path class="div_a" d="M-2488.929,924.213c1.575.32,3.04.987,2.743,2.987-1.046-.474-1.9-1.385-3.32-1.594a5.293,5.293,0,0,0-.527,2.658,3.1,3.1,0,0,1-1.523-2.785c-1.136.222-2.353,1.248-3.549,2.073.018-1.582.347-2.652,2.681-3.375a5.276,5.276,0,0,0-3.082-.593c1.192-1.465,2.356-2.259,4.07-.348V920.2a.871.871,0,0,1,1.738,0v2.96c.961-1.736,3.648-2,4.191-.026-1.081.2-2.435.114-3.421,1.074Z" data-v-60c75ec8="" transform="translate(2500.914 -919.389)"></path> <path class="div_b" d="M-2481,930.783a3.693,3.693,0,0,0,.466,4.654" data-v-60c75ec8="" transform="translate(2484.048 -921.025)"></path> </g> </svg> </span></div>
+</div>
+
+<form action="${URLUtils.https('Details-Details')}" method="post" id="form" class="form">
+<div class="group_inline" data-v-60c75ec8="">
+<div class="group" data-v-60c75ec8=""><label data-v-60c75ec8="" for="">First Name *</label> 
+   <input data-v-60c75ec8="" formfield="${pdict.contactUserForm.user.firstName.label}" name="first_name" placeholder="First Name" type="text" value="" />
+   <!-- <input formfield="${pdict.contactUserForm.user.firstName.label}" id="firstName" name="firstName" type="input" placeholder="First Name"  /> -->
+<div class="vei vei_hide" data-v-60c75ec8=""><svg data-v-60c75ec8="" height="20" viewbox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg"> <path class="vei_a" d="M13.375,3.375a10,10,0,1,0,10,10A10,10,0,0,0,13.375,3.375ZM14.2,8.644l-.149,5.534a.688.688,0,0,1-.678.712h0a.688.688,0,0,1-.678-.712l-.149-5.534a.828.828,0,0,1,.827-.846h0A.828.828,0,0,1,14.2,8.644Zm-.827,9.442a.885.885,0,1,1,.918-.885A.893.893,0,0,1,13.375,18.087Z" data-v-60c75ec8="" transform="translate(-3.375 -3.375)"></path> </svg></div>
+
+<div class="vei vei_success vei_hide" data-v-60c75ec8=""><svg data-v-60c75ec8="" height="20" viewbox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg"> <g data-v-60c75ec8="" transform="translate(-1137 -385)"> <circle class="vie_sa" cx="10" cy="10" data-v-60c75ec8="" r="10" transform="translate(1137 385)"></circle> <path class="vie_sb" d="M15.1,9,8.845,15.259,6,12.414" data-v-60c75ec8="" transform="translate(1136.249 383.671)"></path> </g> </svg></div>
+</div>
+
+<div class="group" data-v-60c75ec8=""><label data-v-60c75ec8="" for="">Last Name *</label>
+ <input data-v-60c75ec8="" formfield="${pdict.contactUserForm.user.lastName.label}" name="last_name" placeholder="Last Name" type="text" value="" />
+        <!--  <input formfield="${pdict.contactUserForm.user.lastName.label}" id="lastName" name="lastName" type="input" placeholder="Last Name" /> -->
+<div class="vei vei_hide" data-v-60c75ec8=""><svg data-v-60c75ec8="" height="20" viewbox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg"> <path class="vei_a" d="M13.375,3.375a10,10,0,1,0,10,10A10,10,0,0,0,13.375,3.375ZM14.2,8.644l-.149,5.534a.688.688,0,0,1-.678.712h0a.688.688,0,0,1-.678-.712l-.149-5.534a.828.828,0,0,1,.827-.846h0A.828.828,0,0,1,14.2,8.644Zm-.827,9.442a.885.885,0,1,1,.918-.885A.893.893,0,0,1,13.375,18.087Z" data-v-60c75ec8="" transform="translate(-3.375 -3.375)"></path> </svg></div>
+
+<div class="vei vei_success vei_hide" data-v-60c75ec8=""><svg data-v-60c75ec8="" height="20" viewbox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg"> <g data-v-60c75ec8="" transform="translate(-1137 -385)"> <circle class="vie_sa" cx="10" cy="10" data-v-60c75ec8="" r="10" transform="translate(1137 385)"></circle> <path class="vie_sb" d="M15.1,9,8.845,15.259,6,12.414" data-v-60c75ec8="" transform="translate(1136.249 383.671)"></path> </g> </svg></div>
+</div>
+</div>
+
+<div class="group_inline" data-v-60c75ec8="">
+<div class="group" data-v-60c75ec8=""><label data-v-60c75ec8="" for="">Email Address *</label>
+ <input data-v-60c75ec8="" formfield="${pdict.contactUserForm.user.email.label}"  name="email" placeholder="Email Address" type="email" value="" />
+           <!--  <input formfield="${pdict.contactUserForm.user.email.label}" id="email" name="email" type="input" placeholder="Email" /> -->
+
+<div class="vei vei_hide" data-v-60c75ec8=""><svg data-v-60c75ec8="" height="20" viewbox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg"> <path class="vei_a" d="M13.375,3.375a10,10,0,1,0,10,10A10,10,0,0,0,13.375,3.375ZM14.2,8.644l-.149,5.534a.688.688,0,0,1-.678.712h0a.688.688,0,0,1-.678-.712l-.149-5.534a.828.828,0,0,1,.827-.846h0A.828.828,0,0,1,14.2,8.644Zm-.827,9.442a.885.885,0,1,1,.918-.885A.893.893,0,0,1,13.375,18.087Z" data-v-60c75ec8="" transform="translate(-3.375 -3.375)"></path> </svg></div>
+
+<div class="vei vei_success vei_hide" data-v-60c75ec8=""><svg data-v-60c75ec8="" height="20" viewbox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg"> <g data-v-60c75ec8="" transform="translate(-1137 -385)"> <circle class="vie_sa" cx="10" cy="10" data-v-60c75ec8="" r="10" transform="translate(1137 385)"></circle> <path class="vie_sb" d="M15.1,9,8.845,15.259,6,12.414" data-v-60c75ec8="" transform="translate(1136.249 383.671)"></path> </g> </svg></div>
+</div>
+
+<div class="group" data-v-60c75ec8=""><label data-v-60c75ec8="" for="">Contact Number *</label> 
+   <input data-v-60c75ec8="" formfield="${pdict.contactUserForm.user.phone.label}" name="contact_number" placeholder="Contact Number" type="text" value="" />
+            <!--   <input formfield="${pdict.contactUserForm.user.phone.label}" id="phone" name="phone" type="input" placeholder="Phone" /> -->
+
+<div class="vei vei_hide" data-v-60c75ec8=""><svg data-v-60c75ec8="" height="20" viewbox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg"> <path class="vei_a" d="M13.375,3.375a10,10,0,1,0,10,10A10,10,0,0,0,13.375,3.375ZM14.2,8.644l-.149,5.534a.688.688,0,0,1-.678.712h0a.688.688,0,0,1-.678-.712l-.149-5.534a.828.828,0,0,1,.827-.846h0A.828.828,0,0,1,14.2,8.644Zm-.827,9.442a.885.885,0,1,1,.918-.885A.893.893,0,0,1,13.375,18.087Z" data-v-60c75ec8="" transform="translate(-3.375 -3.375)"></path> </svg></div>
+
+<div class="vei vei_success vei_hide" data-v-60c75ec8=""><svg data-v-60c75ec8="" height="20" viewbox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg"> <g data-v-60c75ec8="" transform="translate(-1137 -385)"> <circle class="vie_sa" cx="10" cy="10" data-v-60c75ec8="" r="10" transform="translate(1137 385)"></circle> <path class="vie_sb" d="M15.1,9,8.845,15.259,6,12.414" data-v-60c75ec8="" transform="translate(1136.249 383.671)"></path> </g> </svg></div>
+</div>
+</div>
+
+<div class="group" data-v-60c75ec8=""><label data-v-60c75ec8="" for="">What would like to contact us about today? *</label> <select data-v-60c75ec8="" formfield="${pdict.contactUserForm.user.inquiryAbout.label}" name="reason"><option data-v-60c75ec8="" disabled="disabled" value="">Select a contact reason</option><option data-v-60c75ec8="" selected="selected" value="Product Inquiry">Product Inquiry</option><option data-v-60c75ec8="" value="Recipe Inquiry">Recipe Inquiry</option><option data-v-60c75ec8="" value="Others">Others</option> </select>
+
+<div class="dd" data-v-60c75ec8="">&nbsp;</div>
+</div>
+
+<div class="group" data-v-60c75ec8="">
+<div class="inner" data-v-60c75ec8=""><label data-v-60c75ec8="" for="">Your Inquiry *</label><textarea data-v-60c75ec8="" maxlength="1000" formfield="${pdict.contactUserForm.user.inquiry.label}"  name="inquiry" placeholder="Write a message..." rows="15"></textarea>
+
+<div class="vei vei_hide" data-v-60c75ec8=""><svg data-v-60c75ec8="" height="20" viewbox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg"> <path class="vei_a" d="M13.375,3.375a10,10,0,1,0,10,10A10,10,0,0,0,13.375,3.375ZM14.2,8.644l-.149,5.534a.688.688,0,0,1-.678.712h0a.688.688,0,0,1-.678-.712l-.149-5.534a.828.828,0,0,1,.827-.846h0A.828.828,0,0,1,14.2,8.644Zm-.827,9.442a.885.885,0,1,1,.918-.885A.893.893,0,0,1,13.375,18.087Z" data-v-60c75ec8="" transform="translate(-3.375 -3.375)"></path> </svg></div>
+
+<div class="vei vei_success vei_hide" data-v-60c75ec8=""><svg data-v-60c75ec8="" height="20" viewbox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg"> <g data-v-60c75ec8="" transform="translate(-1137 -385)"> <circle class="vie_sa" cx="10" cy="10" data-v-60c75ec8="" r="10" transform="translate(1137 385)"></circle> <path class="vie_sb" d="M15.1,9,8.845,15.259,6,12.414" data-v-60c75ec8="" transform="translate(1136.249 383.671)"></path> </g> </svg></div>
+</div>
+
+
+</div>
+
+
+<div class="group captcha_group" data-v-60c75ec8="">
+<div class="captcha_content" data-v-60c75ec8="">
+<div class="g-recaptcha captcha_element" data-badge="bottomright" data-callback="recaptchaSuccessCallback" data-error-callback="recaptchaErrorCallback" data-expired-callback="recaptchaExpiredCallback" data-sitekey="6LdBusgZAAAAAOSzHIwyc7AOrvukVNAjOE9mjHEb" data-size="normal" data-tabindex="0" data-theme="light" data-v-60c75ec8="">&nbsp;</div>
+<span class="validate" data-v-60c75ec8=""></span></div>
+</div>
+
+<div class="action_btn" data-v-60c75ec8=""><button class="btn_send" data-v-60c75ec8="" type="submit">Send</button></div>
+</form>
+<div><a href="${URLUtils.https('Details-CustomerInterest')}">Tell us about your interest and we will show you customize products!</a> </div>
+</div>
+</div>
+</div>
+
+
+</isdecorate>

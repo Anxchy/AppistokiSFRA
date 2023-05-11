@@ -12,13 +12,14 @@ var promotionCache = require('*/cartridge/scripts/util/promotionCache');
  *
  * @returns {Object} - Decorated product model
  */
-module.exports = function productTile(product, apiProduct, productType) {
+module.exports = function productTile(product, apiProduct, productType, options) {
     var productHelper = require('*/cartridge/scripts/helpers/productHelpers');
     var productSearchHit = productHelper.getProductSearchHit(apiProduct);
     decorators.base(product, apiProduct, productType);
     decorators.searchPrice(product, productSearchHit, promotionCache.promotions, productHelper.getProductSearchHit);
     decorators.images(product, apiProduct, { types: ['medium'], quantity: 'single' });
     decorators.ratings(product);
+    decorators.promotions(product, options.promotions);
     if (productType === 'set') {
         decorators.setProductsCollection(product, apiProduct);
     }

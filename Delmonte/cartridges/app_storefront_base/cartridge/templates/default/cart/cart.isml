@@ -48,6 +48,12 @@
                 </div>
             </div>
         </div>
+
+<iscomment> <script>
+  _etmc.push(["setOrgId", "514000190"]);
+  _etmc.push(["trackCart", { "clear_cart": true } ]);
+</script> </iscomment>
+
     <iselse/>
         <div class="container cart cart-page">
             <div class="row">

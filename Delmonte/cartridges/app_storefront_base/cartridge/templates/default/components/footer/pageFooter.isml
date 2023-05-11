@@ -13,6 +13,10 @@
             <div class="footer-item col-sm-3 collapsible-xs">
                 <iscontentasset aid="footer-about" />
             </div>
+            <!-- anxchy practice -->
+            <div class="">
+                <iscontentasset aid="DelMonte-Practice" />
+            </div>
         </div>
         <hr class="hidden-xs-down" />
         <div class="row">

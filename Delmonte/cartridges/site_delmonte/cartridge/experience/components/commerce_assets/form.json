@@ -1,0 +1,36 @@
+{
+    "name": "form",
+    "description": "This is a form component.",
+    "group": "commerce_assets",
+    "attribute_definition_groups": [
+        {
+            "id": "formSpec",
+            "name": "formSpecification",
+            "description": "Specification of the form.",
+            "attribute_definitions": [
+                {
+                    "id": "name",
+                    "name": "Name",
+                    "description": "name.",
+                    "type": "string",
+                    "required": true
+                },
+                {
+                    "id": "lastName",
+                    "name": "Last Name",
+                    "description": "last name.",
+                    "type": "string",
+                    "required": true
+                },
+                {
+		          "id": "image",
+		          "name": "Image",
+		          "type": "image",
+		          "required": true
+		        }
+		                
+            ]
+        }
+    ],
+    "region_definitions": []
+}

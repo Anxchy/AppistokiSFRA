@@ -29,7 +29,8 @@ module.exports = {
 
         switch (params.pview) {
             case 'tile':
-                product = productTile(product, apiProduct, productType);
+            	options = productHelper.getConfig(apiProduct, params);
+                product = productTile(product, apiProduct, productType, options);
                 break;
             case 'bonusProductLineItem':
                 promotions = PromotionMgr.activeCustomerPromotions.getProductPromotions(apiProduct);
