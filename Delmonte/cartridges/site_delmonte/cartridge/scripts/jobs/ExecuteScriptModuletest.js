@@ -4,6 +4,7 @@
 function execute(param) {
     var a = 5;
     var y = 67;
+    var 5 = 56;
 }
 
 
