@@ -1,0 +1,67 @@
+{
+    "step-types": {
+        "script-module-step": [
+            {
+                "@type-id": "custom.SetProductAttribute",
+                "@supports-parallel-execution": "false",
+                "@supports-site-context": "true",
+                "@supports-organization-context": "false",
+                "description": "This script set product onSale attribute true/false based on conditions.",
+                "module": "site_delmonte/cartridge/scripts/jobs/SetProductAttributes.js",
+                "function": "execute",
+                "transactional": "true",
+                "timeout-in-seconds": "900",
+                "parameters": {
+                    "parameter": [
+                        {
+                            "@name": "IsSalePriceBookPromotion",
+                            "@type": "boolean",
+                            "@required": "false",
+                            "description": "if client wants to make OnSale true based on salePrice."
+                        },
+                        {
+                            "@name": "IsCampaignPromotion",
+                            "@type": "boolean",
+                            "@required": "false",
+                            "description": "if client wants to make OnSale true based on Campaign."
+                        },
+                        {
+                            "@name": "IsClasses",
+                            "@type": "boolean",
+                            "@required": "false",
+                            "description": "if client wants to make OnSale true based on Classes."
+                        },
+                        {
+                            "@name": "IsProducts",
+                            "@type": "boolean",
+                            "@required": "false",
+                            "description": "if client wants to make OnSale true based on Products."
+                        },
+                        {
+                            "@name": "PriceBook",
+                            "@type": "string",
+                            "@required": "true",
+                            "description": "Price Book which will be appplicable for products."
+                        }
+                    ]
+                },
+                "status-codes": {
+                    "status": [
+                        {
+                            "@code": "ERROR",
+                            "description": "Used when the step failed with an error."
+                        },
+                        {
+                            "@code": "FINISHED",
+                            "description": "Used when the step finished successfully."
+                        },
+                        {
+                            "@code": "FINISHED_WITH_WARNINGS",
+                            "description": "Used when the step finished with warnings."
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
